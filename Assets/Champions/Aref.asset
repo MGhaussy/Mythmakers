@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a8871feef8346b73211a8f577d92, type: 3}
+  m_Name: Aref
+  m_EditorClassIdentifier: 
+  name: Aref
+  color: 0
+  speed: 3
+  effect: None
+  modifiers: 0000000000000000
+  vicdef: 0000000000000000
+  quests:
+  - End your turn with no cards in hand.
+  - Move 10 in 2 turn.
+  cardlist:
+  - {fileID: 11400000, guid: d055678be1051ed4abdbdf5526fa6d5f, type: 2}
+  - {fileID: 11400000, guid: 93fae0a9425236b4cbce99ee512a919c, type: 2}
+  - {fileID: 11400000, guid: 20924eda465ca7b439b76d8cacae9081, type: 2}
+  - {fileID: 11400000, guid: b8ecd53011716f8488bb0ed044d7fcee, type: 2}
+  - {fileID: 11400000, guid: 1b8ef43e707e1984092912c810fd1bbf, type: 2}
+  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
+  - {fileID: 11400000, guid: 5aa8f9b97d0dffd4b8d23b7e0b9841d2, type: 2}
+  - {fileID: 11400000, guid: 44b0498b94e1a4244a0ff711ce8af556, type: 2}
+  - {fileID: 11400000, guid: 8d73a27cf6db95d46b82075d52159352, type: 2}
+  - {fileID: 11400000, guid: 9ed6fd4b533db464ab353d66c51700b5, type: 2}
+  hand:
+  - {fileID: 11400000, guid: 9ed6fd4b533db464ab353d66c51700b5, type: 2}
+  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
+  - {fileID: 11400000, guid: 93fae0a9425236b4cbce99ee512a919c, type: 2}
+  - {fileID: 11400000, guid: 8d73a27cf6db95d46b82075d52159352, type: 2}
+  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
