@@ -8,18 +8,18 @@ public class Champion : ScriptableObject
 {
     public new string name;
     public float color;
+    public int team;
     public int speed;
+    public int handlimit = 5;
     public string effect;
     public int[] modifiers;
     public int[] vicdef;
     public string[] quests = new string[2];
     public Queue<Card> health = new Queue<Card>();
     public Stack<Card> damage;
-    public Stack<Card> discard;
+    public Stack<Card> discard = new Stack<Card>();
     public Card[] cardlist;
-    public Card[] hand = new Card[5];
-    public Board board;
-    public Space space;
+    public List<Card> hand;
 
     public void PopulateDeck()
     {
@@ -59,16 +59,15 @@ public class Champion : ScriptableObject
         Debug.Log(this.health.Count);
     }
 
-    public void Draw()
+    public Card Draw()
     {
-        for (int i = 0; i < this.hand.Length; i++)
+        Card newhandcard = this.health.Dequeue();
+        if (newhandcard)
         {
-            if (this.hand[i] == null)
-            {
-                this.hand[i] = this.health.Dequeue();
-                break;
-            }
+            hand.Add(newhandcard);
+            return newhandcard;
         }
+        return null;
     }
 
     public void Damage(int dmg)
@@ -79,9 +78,17 @@ public class Champion : ScriptableObject
         }
     }
 
-    public void Move(Space newspace)
+    public void Play(Card card)
     {
-        this.space = newspace;
+        hand.Remove(card);
+        discard.Push(card);
+        Debug.Log(card.name + " was played!");
+    }
+
+    public void Shutdown()
+    {
+        this.health = null;
+        hand.RemoveRange(0, hand.Count - 1);
     }
 
 }

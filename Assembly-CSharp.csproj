@@ -65,8 +65,16 @@
     <Compile Include="Assets\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\CardDisplay.cs" />
     <Compile Include="Assets\Scripts\Champion.cs" />
+    <Compile Include="Assets\Scripts\Draggable.cs" />
+    <Compile Include="Assets\Scripts\Flame.cs" />
+    <Compile Include="Assets\Scripts\FlyCamera.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Overlay.cs" />
+    <Compile Include="Assets\Scripts\Piece.cs" />
+    <Compile Include="Assets\Scripts\PlayZone.cs" />
     <Compile Include="Assets\Scripts\Space.cs" />
+    <Compile Include="Assets\Scripts\TurnManager.cs" />
+    <Compile Include="Assets\TestScript.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/micha/Documents/GitHub/Mythmakers/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

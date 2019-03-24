@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Flurry of Blows
   m_EditorClassIdentifier: 
   name: Flurry of Blows
-  cardtype: Attack 6
+  mychamp: {fileID: 11400000, guid: 2260a3ffa9afcc84e9599eb35969d44d, type: 2}
+  cardtype: 0
+  targets: 00000000
+  damage: 0
   ap: 4
   range: 1
   target: 1 Enemy

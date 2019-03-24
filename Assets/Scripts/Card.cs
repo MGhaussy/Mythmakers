@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Card : ScriptableObject
 {
     public new string name;
+    public Champion mychamp;
     public enum CardType
     {
         Attack,
@@ -14,6 +15,13 @@ public class Card : ScriptableObject
         Enchant
     }
     public CardType cardtype;
+    public enum TargetType
+    {
+        Enemy,
+        Ally,
+        Self
+    }
+    public TargetType[] targets;
     public int damage;
     public int ap;
     public int range;
@@ -22,46 +30,6 @@ public class Card : ScriptableObject
     public Sprite image;
     public int copies;
 
-    public string GetName()
-    {
-        return this.name;
-    }
-    public void SetName(string value)
-    {
-        this.name = value;
-    }
-    public int GetAP()
-    {
-        return this.ap;
-    }
-    public void SetAP(int value)
-    {
-        this.ap = value;
-    }
-    public int GetRange()
-    {
-        return this.range;
-    }
-    public void SetRange(int value)
-    {
-        this.range = value;
-    }
-    public string GetTarget()
-    {
-        return this.target;
-    }
-    public void SetTarget(string value)
-    {
-        this.target = value;
-    }
-    public string GetEffect()
-    {
-        return this.effect;
-    }
-    public void SetEffect(string value)
-    {
-        this.effect = value;
-    }
 
     public Card(string nam, int _ap, int ran, string tar, string eff, Sprite img)
     {
@@ -72,4 +40,10 @@ public class Card : ScriptableObject
         this.effect = eff;
         this.image = img;
     }
+
+
+    //public int CalculateDamage()
+    //{
+
+    //}
 }

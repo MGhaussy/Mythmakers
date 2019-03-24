@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef821bce1eb165d428a7610ca8173dd9, type: 3}
+  m_Name: Pinpoint Strike
+  m_EditorClassIdentifier: 
+  name: Pinpoint Strike
+  mychamp: {fileID: 11400000, guid: 3a65ba7973d8a1e45b7667dc56f3f1f4, type: 2}
+  cardtype: 0
+  targets: 
+  damage: 3
+  ap: 1
+  range: 1
+  target: 1 Enemy
+  effect: If ur only one next to target deal 2 more
+  image: {fileID: 21300000, guid: a5df69367389ad4478678ea7c0a9b31e, type: 3}
+  copies: 4

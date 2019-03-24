@@ -13,7 +13,10 @@ MonoBehaviour:
   m_Name: Reserve of Energy
   m_EditorClassIdentifier: 
   name: Reserve of Energy
-  cardtype: Ability
+  mychamp: {fileID: 11400000, guid: 2260a3ffa9afcc84e9599eb35969d44d, type: 2}
+  cardtype: 0
+  targets: 02000000
+  damage: 0
   ap: 3
   range: 0
   target: Self

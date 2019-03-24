@@ -15,6 +15,7 @@ MonoBehaviour:
   name: Aref
   color: 0
   speed: 3
+  handlimit: 5
   effect: None
   modifiers: 0000000000000000
   vicdef: 0000000000000000
@@ -32,9 +33,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 44b0498b94e1a4244a0ff711ce8af556, type: 2}
   - {fileID: 11400000, guid: 8d73a27cf6db95d46b82075d52159352, type: 2}
   - {fileID: 11400000, guid: 9ed6fd4b533db464ab353d66c51700b5, type: 2}
-  hand:
-  - {fileID: 11400000, guid: 9ed6fd4b533db464ab353d66c51700b5, type: 2}
-  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
-  - {fileID: 11400000, guid: 93fae0a9425236b4cbce99ee512a919c, type: 2}
-  - {fileID: 11400000, guid: 8d73a27cf6db95d46b82075d52159352, type: 2}
-  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
+  hand: []
+  board: {fileID: 0}
+  space: {fileID: 0}
