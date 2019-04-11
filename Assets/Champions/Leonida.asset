@@ -13,26 +13,28 @@ MonoBehaviour:
   m_Name: Leonida
   m_EditorClassIdentifier: 
   name: Leonida
-  color: 0
+  color: 1
+  team: 0
   speed: 3
+  ap: 3
   handlimit: 5
   effect: None
+  currentEffect: 0
   modifiers: 0000000000000000
   vicdef: 0000000000000000
   quests:
   - When each ally has defeated an enemy
   - Move an ally onto an item space
   cardlist:
-  - {fileID: 11400000, guid: be18840967a16124b8cf677a6638ff70, type: 2}
-  - {fileID: 11400000, guid: f07738a07eec3a84cb9f26f0f021c52b, type: 2}
-  - {fileID: 11400000, guid: 71cdbb0103d4299428aed7abf73d41ca, type: 2}
-  - {fileID: 11400000, guid: df4f98eda7873a1419e3cc5663a9f562, type: 2}
-  - {fileID: 11400000, guid: bc116db04c4f1484b801f934b57fb10f, type: 2}
-  - {fileID: 11400000, guid: 621c0c10da95e5f45b5978e0ddf6fb05, type: 2}
-  - {fileID: 11400000, guid: 0cc2f313e5eb53047bcdc0b9f0948d46, type: 2}
-  - {fileID: 11400000, guid: 2453c04b3fad23d4fb769ca1463ce642, type: 2}
-  - {fileID: 11400000, guid: 2a31a84f87d1e034890f28ab137b043c, type: 2}
-  - {fileID: 11400000, guid: c6950c3e0e4fc5547a55757581a2d2a1, type: 2}
+  - {fileID: 11400000, guid: 26582bf0af62fb74c8fdcf9d672d1aa4, type: 2}
+  - {fileID: 11400000, guid: d3354c73eb6ec2843b71c2a09407add7, type: 2}
+  - {fileID: 11400000, guid: 45d75659e484cca44a801cef28472d02, type: 2}
+  - {fileID: 11400000, guid: 124d9e9d9e665444c8ea976a9c6bcfd8, type: 2}
+  - {fileID: 11400000, guid: ee59485fdd356fc4a8b0df502dfb2d8f, type: 2}
+  - {fileID: 11400000, guid: 9786a84b94de3954482c86b538054cbd, type: 2}
+  - {fileID: 11400000, guid: 4104dda41f17a9e4293f2292b8ad80a0, type: 2}
+  - {fileID: 11400000, guid: e9cc9147c18c3b640af69588517ee25e, type: 2}
+  - {fileID: 11400000, guid: 5cf1643e5ad4b9442b44c5798a12965c, type: 2}
+  - {fileID: 11400000, guid: 4705f96709ed7ae479ee7b8f0bb99e69, type: 2}
   hand: []
-  board: {fileID: 0}
-  space: {fileID: 0}
+  fleetcount: 0

@@ -32,8 +32,14 @@ public class CardDisplay : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
         //img.sprite = card.image;
     }
 
+
     public void OnBeginDrag(PointerEventData data)
     {
+        if (this.transform.parent.parent.GetComponent<Overlay>().discardcount > 0)
+        {
+            this.transform.parent.parent.GetComponent<Overlay>().discardcount--;
+            this.transform.parent.parent.GetComponent<Overlay>().Discard(this.gameObject);
+        }
         returnParent = this.transform.parent;
         this.transform.SetParent(this.transform.parent.parent);
         GetComponent<CanvasGroup>().blocksRaycasts = false;
@@ -46,7 +52,11 @@ public class CardDisplay : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndD
 
     public void OnEndDrag(PointerEventData data)
     {
+        if (returnParent.parent == this.transform.parent)
+        {
         this.transform.SetParent(returnParent);
         GetComponent<CanvasGroup>().blocksRaycasts = true;
+        }
+        
     }
 }

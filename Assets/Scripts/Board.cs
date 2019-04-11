@@ -9,8 +9,10 @@ public class Board :  MonoBehaviour
     public Space[] board;
     public Piece[] piecelist;
     public Flame[] flames;
+    public Overlay overlay;
     public Queue<Piece> pieces = new Queue<Piece>();
     public Piece currentPiece;
+    public Piece movePiece;
 
     private void Start()
     {
@@ -26,6 +28,15 @@ public class Board :  MonoBehaviour
         return space.neighbors;
     }
 
+    public void ResetClickable()
+    {
+        foreach (Piece piece in piecelist)
+        {
+            piece.isClickable = false;
+            piece.myspace.transform.GetChild(0).GetComponent<Light>().enabled = false;
+        }
+    }
+
     public void TurnOffLights()
     {
         foreach (Space space in board)
@@ -39,7 +50,7 @@ public class Board :  MonoBehaviour
     {
         pieces.Enqueue(currentPiece);
         currentPiece.isTurn = false;
-        currentPiece.hasMoved = false;
+        currentPiece.hasMoved = 1;
         currentPiece = pieces.Dequeue();
         currentPiece.isTurn = true;
     }

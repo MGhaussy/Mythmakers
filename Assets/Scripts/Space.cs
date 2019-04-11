@@ -19,9 +19,9 @@ public class Space : MonoBehaviour
     }
     public SpaceType spacetype;
 
-    public Space[] GetNeighbors(Space space)
+    public Space[] GetNeighbors()
     {
-        return space.neighbors;
+        return neighbors;
     }
 
     private void OnMouseDown()
@@ -29,7 +29,7 @@ public class Space : MonoBehaviour
         //Move the current Piece to this position.
         if (isClickable)
         {
-            this.myboard.currentPiece.Move(this);
+            this.myboard.movePiece.Move(this);
         }
     }
 
@@ -37,6 +37,16 @@ public class Space : MonoBehaviour
     {
         isClickable = !isClickable;
         transform.GetChild(0).GetComponent<Light>().enabled = !transform.GetChild(0).GetComponent<Light>().enabled;
+    }
+
+    public void LightOn()
+    {
+        transform.GetChild(0).GetComponent<Light>().enabled = true;
+    }
+
+    public void LightOff()
+    {
+        transform.GetChild(0).GetComponent<Light>().enabled = false;
     }
 
 

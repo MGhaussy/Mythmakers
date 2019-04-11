@@ -14,25 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Aref
   color: 0
+  team: 0
   speed: 3
+  ap: 3
   handlimit: 5
   effect: None
+  currentEffect: 0
   modifiers: 0000000000000000
   vicdef: 0000000000000000
   quests:
   - End your turn with no cards in hand.
   - Move 10 in 2 turn.
   cardlist:
-  - {fileID: 11400000, guid: d055678be1051ed4abdbdf5526fa6d5f, type: 2}
-  - {fileID: 11400000, guid: 93fae0a9425236b4cbce99ee512a919c, type: 2}
-  - {fileID: 11400000, guid: 20924eda465ca7b439b76d8cacae9081, type: 2}
-  - {fileID: 11400000, guid: b8ecd53011716f8488bb0ed044d7fcee, type: 2}
-  - {fileID: 11400000, guid: 1b8ef43e707e1984092912c810fd1bbf, type: 2}
-  - {fileID: 11400000, guid: 67757ed8096530946aeaa2a0a80cfe7e, type: 2}
-  - {fileID: 11400000, guid: 5aa8f9b97d0dffd4b8d23b7e0b9841d2, type: 2}
-  - {fileID: 11400000, guid: 44b0498b94e1a4244a0ff711ce8af556, type: 2}
-  - {fileID: 11400000, guid: 8d73a27cf6db95d46b82075d52159352, type: 2}
-  - {fileID: 11400000, guid: 9ed6fd4b533db464ab353d66c51700b5, type: 2}
-  hand: []
-  board: {fileID: 0}
-  space: {fileID: 0}
+  - {fileID: 11400000, guid: 7525e9a88f5047e4bb98de00e4f8be20, type: 2}
+  - {fileID: 11400000, guid: d04dfc52c285db54c8e8088790ad1702, type: 2}
+  - {fileID: 11400000, guid: 7aaff4f718ea88a4aa1a7663d7b30c88, type: 2}
+  - {fileID: 11400000, guid: 70749ad310b65d444acbc3694c55a485, type: 2}
+  - {fileID: 11400000, guid: ef16d46cc06f04940b52c69fb7aaa421, type: 2}
+  - {fileID: 11400000, guid: cb9d51460df3d4e4384fe08cdf597ada, type: 2}
+  - {fileID: 11400000, guid: cfd77525953eab547808ff095c9e3bff, type: 2}
+  - {fileID: 11400000, guid: 0f97c0c4d3ad54a4393eae25744a90ab, type: 2}
+  - {fileID: 11400000, guid: 5ef7eb89da7d0ef41b34f5064b59b1d8, type: 2}
+  - {fileID: 11400000, guid: 25f87664b93820048b5a02ebfbee361b, type: 2}
+  hand:
+  - {fileID: 11400000, guid: 25f87664b93820048b5a02ebfbee361b, type: 2}
+  - {fileID: 11400000, guid: 7525e9a88f5047e4bb98de00e4f8be20, type: 2}
+  fleetcount: 0

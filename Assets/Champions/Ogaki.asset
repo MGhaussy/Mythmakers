@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a8871feef8346b73211a8f577d92, type: 3}
+  m_Name: Ogaki
+  m_EditorClassIdentifier: 
+  name: Ogaki Nakos
+  color: 0
+  team: 0
+  speed: 3
+  ap: 3
+  handlimit: 5
+  effect: 
+  currentEffect: 0
+  modifiers: 0000000000000000
+  vicdef: 0000000000000000
+  quests:
+  - 
+  - 
+  cardlist:
+  - {fileID: 11400000, guid: f6c2d0e087a408b46bca2b8129194b05, type: 2}
+  - {fileID: 11400000, guid: bd3a5d896c898a7458cc4d4dd3b50cf1, type: 2}
+  - {fileID: 11400000, guid: e6971b1bc3a45c64394dbc2a7183656a, type: 2}
+  - {fileID: 11400000, guid: c059da9270fb5c84381e10124f85827c, type: 2}
+  - {fileID: 11400000, guid: 1d4f398c8e919d3408d6935417d44a56, type: 2}
+  - {fileID: 11400000, guid: a61b4f9c8c0dc324083b97de81bcb74b, type: 2}
+  - {fileID: 11400000, guid: a1b41fc663b062b4ab0b8019b97e20b1, type: 2}
+  - {fileID: 11400000, guid: db904e9125c2c2b4b9983f2cca0d334c, type: 2}
+  - {fileID: 11400000, guid: ecdee4f30546450438eaf646de7b23a2, type: 2}
+  - {fileID: 11400000, guid: f27dd13b88985dc4da748929f9bf5917, type: 2}
+  - {fileID: 11400000, guid: 1b198f7fdfbab2e4ca61cb92d7761cdb, type: 2}
+  hand: []
+  enchants: []
+  fleetcount: 0

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d3f8b442d4e7264ea13d68c797e6155, type: 3}
+  m_Name: SteamShield
+  m_EditorClassIdentifier: 
+  name: Steam Shield
+  mychamp: {fileID: 11400000, guid: 26c6102ea78e06f42b0f58f989b5ffc9, type: 2}
+  cardtype: 2
+  targets: 02000000
+  damage: 0
+  ap: 1
+  range: 0
+  effect: 
+  image: {fileID: 21300000, guid: 5bf98a45ba4789541a0465a2705b2042, type: 3}
+  copies: 2

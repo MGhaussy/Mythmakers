@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Overlay : MonoBehaviour
 {
@@ -9,15 +10,18 @@ public class Overlay : MonoBehaviour
     public Board board;
     public Queue<Champion> champions = new Queue<Champion>();
     public Champion[] champlist = new Champion[2];
-    public Piece[] pieces = new Piece[2];
-    public Piece currentPiece;
+    public Piece[] pieces = new Piece[6];
     public Text namedesc;
     public Text questsdesc;
     public Text effectdesc;
     public Text victorydesc;
     public Text defeatdesc;
+    public Text healthtext;
     public Transform hand;
+    public Transform display;
     public GameObject cardPrefab;
+    public List<Piece> mytargets = new List<Piece>();
+    public int discardcount;
 
     private void Start()
     {
@@ -27,6 +31,7 @@ public class Overlay : MonoBehaviour
         }
         foreach (Champion ch in champlist)
         {
+            ch.Reset();
             champions.Enqueue(ch);
             ch.PopulateDeck();
             ch.Shuffle();
@@ -34,12 +39,12 @@ public class Overlay : MonoBehaviour
         }
         champ = champions.Dequeue();
         
+        Draw();
+        Draw();
+        Draw();
+        Draw();
+        Draw();
         this.SetView(champ);
-        Draw();
-        Draw();
-        Draw();
-        Draw();
-        Draw();
         champ.Print();
     }
 
@@ -49,23 +54,25 @@ public class Overlay : MonoBehaviour
         questsdesc.text = "Quests" + System.Environment.NewLine + champ.quests[0] + System.Environment.NewLine + champ.quests[1];
         victorydesc.text = "Victories" + System.Environment.NewLine + champ.vicdef[0].ToString();
         defeatdesc.text = "Defeats" + System.Environment.NewLine + champ.vicdef[0].ToString();
+        healthtext.text = champ.health.Count.ToString();
         
+    }
+
+    public void SwitchDisplay()
+    {
+        for (int i = 5; i < 10; i++)
+        {
+            this.transform.GetChild(i).GetComponent<CanvasGroup>().alpha = 1 - this.transform.GetChild(i).GetComponent<CanvasGroup>().alpha;
+        }
     }
 
     //Doesn't do anything.
     private void Shutdown()
     {
-        foreach (Card card in this.champ.health)
-        {
-            this.champ.health.Dequeue();
-        }
-        for (int i = 0; i < this.champ.hand.Count; i++)
-        {
-            this.champ.hand[i] = null;
-        }
+        Debug.Log("Bye.");
     }
 
-    private void Draw()
+    public void Draw()
     {
         Card handcard = champ.Draw();
         if (handcard)
@@ -79,14 +86,28 @@ public class Overlay : MonoBehaviour
     public void Play(GameObject cardDisplay)
     {
         Card card = cardDisplay.GetComponent<CardDisplay>().card;
-        if(currentPiece.CanPlay(card))
-        champ.Play(card);
+        if (board.currentPiece.CanPlay(card))
+        {
+            champ.Play(card, mytargets);
+            Object.Destroy(cardDisplay);
+        }
+        board.ResetClickable();
+    }
+
+    public void Discard(GameObject cardDisplay)
+    {
+        champ.Discard(cardDisplay.GetComponent<CardDisplay>().card);
         Object.Destroy(cardDisplay);
+    }
+
+    public void SetTarget(Piece champ)
+    {
+        mytargets.Add(champ);
+        Debug.Log(champ.name + " was added to targets.");
     }
 
     public void EndTurn()
     {
-        Debug.Log("click");
         while (champ.discard.Count > 0)
         {
             champ.health.Enqueue(champ.discard.Pop());
@@ -95,10 +116,12 @@ public class Overlay : MonoBehaviour
         {
             Object.Destroy(cardDisplay.gameObject);
         }
+        champ.ap = 3;
+        champ.fleetcount = 0;
         champions.Enqueue(champ);
         champ = champions.Dequeue();
         board.NextChamp();
-        this.SetView(champ);
+        Debug.Log(champ.name);
         while (champ.hand.Count < champ.handlimit)
         {
             champ.Draw();
@@ -116,6 +139,25 @@ public class Overlay : MonoBehaviour
                 flame.Extinguish();
             }
         }
+        this.SetView(champ);
+    }
+
+    public void AddSword()
+    {
+        foreach (Piece piece in mytargets)
+        {
+            piece.mychamp.modifiers[0] += 1;
+        }
+        this.transform.GetChild(13).GetComponent<CanvasGroup>().alpha = 0;
+    }
+
+    public void AddShield()
+    {
+        foreach (Piece piece in mytargets)
+        {
+            piece.mychamp.modifiers[1] += 1;
+        }
+        this.transform.GetChild(13).GetComponent<CanvasGroup>().alpha = 0;
     }
 
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
-public class Card : ScriptableObject
+public abstract class Card : ScriptableObject
 {
     public new string name;
     public Champion mychamp;
@@ -25,25 +25,46 @@ public class Card : ScriptableObject
     public int damage;
     public int ap;
     public int range;
-    public string target;
     public string effect;
     public Sprite image;
     public int copies;
 
 
-    public Card(string nam, int _ap, int ran, string tar, string eff, Sprite img)
+
+
+    public abstract int GetAP();
+
+    public bool IsRightType(Champion champ)
     {
-        this.name = nam;
-        this.ap = _ap;
-        this.range = ran;
-        this.target = tar;
-        this.effect = eff;
-        this.image = img;
+        foreach (TargetType targ in this.targets)
+        {
+            switch (targ)
+            {
+                case TargetType.Enemy:
+                    if (mychamp.team != champ.team)
+                    {
+                        return true;
+                    }
+                    break;
+                case TargetType.Ally:
+                    if (mychamp.team == champ.team && mychamp.color != champ.color)
+                    {
+                        return true;
+                    }
+                    break;
+                default:
+                    return mychamp.color == champ.color;
+            }
+        }
+        return false;
+        
     }
 
+    public abstract void Play(List<Piece> targets);
 
-    //public int CalculateDamage()
-    //{
 
-    //}
+    public int GetDamage()
+    {
+        return damage + mychamp.modifiers[0];
+    }
 }

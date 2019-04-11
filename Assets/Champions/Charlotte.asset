@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0b9a8871feef8346b73211a8f577d92, type: 3}
+  m_Name: Charlotte
+  m_EditorClassIdentifier: 
+  name: Charlotte Lajoie
+  color: 4
+  team: 0
+  speed: 3
+  ap: 3
+  handlimit: 5
+  effect: 
+  currentEffect: 0
+  modifiers: 0000000000000000
+  vicdef: 0000000000000000
+  quests:
+  - 
+  - 
+  cardlist:
+  - {fileID: 11400000, guid: 71b0aaa22cd8ed54680ff3044bea4363, type: 2}
+  - {fileID: 11400000, guid: 3772208dbad366c409e4067114825cea, type: 2}
+  - {fileID: 11400000, guid: 1e81ab84511f5b34294d8cc1051c7cbc, type: 2}
+  - {fileID: 11400000, guid: ce45f227bed4c0f4bb11d8ad50269190, type: 2}
+  - {fileID: 11400000, guid: 88424930cab73b5458bda449eb9e4afc, type: 2}
+  - {fileID: 11400000, guid: f07a4e351806a0d40bc2d008f181b537, type: 2}
+  - {fileID: 11400000, guid: 733254795e19dff4b9b85dd1369af6b6, type: 2}
+  - {fileID: 11400000, guid: 0da84ce619ce0ee42a761f2ca757e8fe, type: 2}
+  - {fileID: 11400000, guid: 0f614ba044870a6459892ae3952587ea, type: 2}
+  - {fileID: 11400000, guid: 3d2a6e5d7bdf18d44b581532002cdc4a, type: 2}
+  hand: []
+  enchants: []
+  fleetcount: 0
