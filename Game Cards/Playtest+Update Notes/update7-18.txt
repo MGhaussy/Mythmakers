@@ -1,0 +1,27 @@
+Changes/Updates 7/18/20:
+
+Aref:
+Urgent Message - Move reduced to 3, ally heals 5.
+Fleet reminder text reduced size
+
+Charlotte:
+Curse names changed
+Beauty Never Lasts- health set to 5
+
+Digo:
+Fear of Death range reduced to 1
+Burst of Undeath- damage reduced to 7
+Unleash the Horde- damage reduced to 3
+
+Gabriela:
+Fire Cannons- damage reduced by 2, range reduced by 2
+
+Konstanse:
+Pull INto Combat - damage reduced by 1
+Leaping attack - damage reduced by 1, range reduced by 1
+
+Kujo:
+Dazzling Light - AP reduced by 1
+
+Percy:
+Gauntlet of Storms- damage reduced by 1

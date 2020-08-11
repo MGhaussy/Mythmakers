@@ -1,0 +1,24 @@
+Champion Changes: 7/14/20
+
+Percy:
+-Ranges reduced to 2
+-Shockwave damage reduced by 1
+-Energy Shield gives max +1 shield
+
+Digo:
+-Fear of Death range reduced to 1
+
+Aref:
+-Sweeping Blow allows Aref to trade places with target
+-Urgent Message reduced to move 6
+
+Charlotte:
+-Enchanting Presence range reduced by 1 and heal reduced to 5
+-All cards range reduced to 3 (except bonds + matchmaker)
+-Siren Call move reduced to 1
+
+Leonida:
+-Coordinated Slash gives one ally +1 sword
+-Combat Maneuvers range reduced to 3
+-Etherial Shield range reduced to 3
+-Strategic Planning -> Tactical Supremacy

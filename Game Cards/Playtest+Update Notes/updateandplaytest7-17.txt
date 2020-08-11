@@ -1,0 +1,23 @@
+
+
+Charlotte cards:
+
+3 curses: (AP1) Move 2, Drain 2, +2 attack
+Curse searcher
+Melee attack, curse bonus (poison)
+Ranged attack, curse bonus (lifedrain)
+Matchmaker
+AoE poison
+
+Gabriela cards:
+
+
+Aref cards:
+reduce damage by 1 for all fleet attacks
+
+Notes:
+More reminder text (True damage, etc.)
+Better visual representation
+I need a visual representation of rules
+Slightly lower some damage outputs
+

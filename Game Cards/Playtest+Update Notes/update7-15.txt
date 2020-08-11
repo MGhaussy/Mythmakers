@@ -1,0 +1,17 @@
+Champion Changes 7/15/20:
+
+Kujo:
+Power Chord MP - changed from an attack to ability, heals 1d6. if <2, gives Immune
+Enchanting Tune- range reduced and effect is now random
+Disheartening Tune- range reduced
+Light Cyclone - Damage changed from 4 to 2d6, deals half damage to adjacent points
+Sunbeam -> Sunburst, 1 more damage
+Inner Peace - removes all effects, enchants and modifiers
+Inspiring Tune- range reduced
+
+Ogaki:
+Poison Arrow - range reduced to 4
+Marking Shot - range reduced to 4
+
+Arefboard - Quest changed from 8 to 6
+Leonidaboard - Grammar change
